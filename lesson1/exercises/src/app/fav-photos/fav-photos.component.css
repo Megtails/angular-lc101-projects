@@ -3,8 +3,10 @@ h3 {
 }
 
 img {
-
+   width: 25%;
+   height: auto;
 }
+
 
 .photos {
    text-align: center;
