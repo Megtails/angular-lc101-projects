@@ -1,6 +1,7 @@
 .movies {
     color: purple;
     font-size: medium;
+    border: solid;
 }
 
 h3 {
