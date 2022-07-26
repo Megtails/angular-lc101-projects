@@ -61,13 +61,6 @@ export class AppComponent {
       rocketImage.style.bottom = movement;
       this.width = this.width + 10000;
       this.height = this.height + 10000;
-
-      if (this.width === 10000 || this.width >= 330000) {
-        this.color = 'orange';
-      } else if (this.width <=33000 && this.width >= 10000){
-        this.color = 'blue';
-      }
-      
     } else if (direction === 'down') {
       let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
       rocketImage.style.bottom = movement;
@@ -75,4 +68,14 @@ export class AppComponent {
       this.height = this.height - 10000;
     }
   }
+
+  colorChange() {
+    if (this.width >= 330000 || this.width <= 9000) {
+      this.color = 'orange';
+    } else {
+      this.color = 'blue';
+    }
+  }
+
+
 }
