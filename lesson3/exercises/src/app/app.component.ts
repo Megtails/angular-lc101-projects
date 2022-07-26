@@ -70,7 +70,7 @@ export class AppComponent {
   colorChange() {
     if (this.height >= 340000 || this.height <= 9000) {
       this.color = 'orange';
-    } else if (this.width >= 470000 || this.width <= 18000) {
+    } else if (this.width >= 470000) {
       this.color = 'orange'; 
     } else {
       this.color = 'blue';
