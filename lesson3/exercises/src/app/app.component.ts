@@ -59,19 +59,19 @@ export class AppComponent {
     } else if (direction === 'up') {
       let movement = parseInt(rocketImage.style.bottom) + 10 + 'px';
       rocketImage.style.bottom = movement;
-      this.width = this.width + 10000;
       this.height = this.height + 10000;
     } else if (direction === 'down') {
       let movement = parseInt(rocketImage.style.bottom) - 10 + 'px';
       rocketImage.style.bottom = movement;
-      this.width = this.width + 10000;
       this.height = this.height - 10000;
     }
   }
 
   colorChange() {
-    if (this.width >= 330000 || this.width <= 9000) {
+    if (this.height >= 340000 || this.height <= 9000) {
       this.color = 'orange';
+    } else if (this.width >= 470000 || this.width <= 18000) {
+      this.color = 'orange'; 
     } else {
       this.color = 'blue';
     }
